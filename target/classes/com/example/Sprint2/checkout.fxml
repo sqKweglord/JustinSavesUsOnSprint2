@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Button?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.Sprint2.CheckoutController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <HBox>
+        <HBox>
+            <Label text="Name" />
+            <TextField fx:id="nameField" />
+        </HBox>
+        <HBox>
+            <Label text="Phone Number" />
+            <TextField fx:id="phoneNumberField" />
+        </HBox>
+    </HBox>
+
+    <HBox>
+        <Label text="Payment Type" />
+        <ComboBox fx:id="paymentTypeDropdown" onAction="#updatePaymentType"/>
+    </HBox>
+    <HBox>
+        <VBox>
+            <Label text="Credit Card Number" />
+            <TextField fx:id="creditCardNumberField" />
+        </VBox>
+        <VBox>
+            <Label text="CCV" />
+            <TextField fx:id="ccvField" />
+        </VBox>
+        <VBox>
+            <Label text="Exp." />
+            <TextField fx:id="expirationField" />
+        </VBox>
+    </HBox>
+    <HBox>
+        <VBox>
+            <Label text="Account Number" />
+            <TextField fx:id="accountNumField" />
+        </VBox>
+        <VBox>
+            <Label text="Routing Number" />
+            <TextField fx:id="routingNumField" />
+        </VBox>
+        <VBox>
+            <Label text="Amount" />
+            <TextField fx:id="amountField" />
+        </VBox>
+    </HBox>
+    <HBox>
+        <HBox>
+            <Label text="Delivery" />
+            <CheckBox fx:id="isDelivering" />
+        </HBox>
+        <HBox>
+            <Label text="Delivery Address" />
+            <TextField fx:id="addressField" />
+        </HBox>
+    </HBox>
+
+    <HBox>
+        <Button text="Take Money" fx:id="processPayment" onAction="#processPayment"/>
+        <Button text="Cancel" fx:id="cancelOrder" onAction="#cancelOrder"/>
+    </HBox>
+
+</VBox>
