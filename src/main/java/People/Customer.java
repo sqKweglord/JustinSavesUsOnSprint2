@@ -1,4 +1,4 @@
-package people;
+package People;
 
 public class Customer extends Person 
 {

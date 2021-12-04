@@ -1,4 +1,5 @@
-package UserInterface;
+/*
+package SwingTrash;
 
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
@@ -45,3 +46,4 @@ public class MainInterface extends JFrame implements ActionListener {
 	}
 	
 }
+*/

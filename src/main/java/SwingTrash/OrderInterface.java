@@ -1,4 +1,4 @@
-package UserInterface;
+package SwingTrash;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
