@@ -6,6 +6,7 @@ public class MenuItem {
     private static int nextItemID = 1;
     protected String itemName;
 
+
     public enum sizes {
         SMALL,
         MEDIUM,
@@ -31,5 +32,13 @@ public class MenuItem {
 
     public sizes getSize() {
         return size;
+    }
+
+    public double getPrice() {
+        return 0;
+    }
+
+    public void setItemName(String name) {
+        itemName = name;
     }
 }

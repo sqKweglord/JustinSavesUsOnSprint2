@@ -3,6 +3,6 @@ module com.example.justinsavesusonsprint2 {
     requires javafx.fxml;
 
 
-    opens com.example.justinsavesusonsprint2 to javafx.fxml;
-    exports com.example.justinsavesusonsprint2;
+    opens com.example.Sprint2 to javafx.fxml;
+    exports com.example.Sprint2;
 }

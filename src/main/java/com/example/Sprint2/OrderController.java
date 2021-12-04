@@ -1,4 +1,4 @@
-package com.example.justinsavesusonsprint2;
+package com.example.Sprint2;
 
 import MenuItems.Drink;
 import MenuItems.MenuItem;
@@ -23,6 +23,7 @@ public class OrderController {
     public Button processOrder;
     public Button cancelOrder;
 
+
     public void updateTotal(double num) {
         DecimalFormat df = new DecimalFormat(".##");
         totalText.setText(
@@ -34,7 +35,7 @@ public class OrderController {
         orderList.setItems(
                 FXCollections.observableArrayList(Main.items)
         );
-        updateTotal(420.69);
+        updateTotal(findPrice());
     }
 
     public void addDrink() {
@@ -80,6 +81,14 @@ public class OrderController {
 
         Stage stage = (Stage) processOrder.getScene().getWindow();
         stage.close();
+    }
+
+    public double findPrice() {
+        double price = 0;
+        for (MenuItem item : Main.items) {
+            price += item.getPrice();
+        }
+        return price;
     }
 
 }

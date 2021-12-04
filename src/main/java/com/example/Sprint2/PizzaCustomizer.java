@@ -1,4 +1,4 @@
-package com.example.justinsavesusonsprint2;
+package com.example.Sprint2;
 
 import MenuItems.Pizza;
 import javafx.fxml.FXML;
@@ -102,6 +102,7 @@ public class PizzaCustomizer {
     }
 
     public void saveAndExit() {
+        pizza.setItemName(typeDropdown.getSelectionModel().getSelectedItem());
         pizza.setSize(sizeDropdown.getSelectionModel().getSelectedItem());
         pizza.setCrust(crustDropdown.getSelectionModel().getSelectedItem());
 

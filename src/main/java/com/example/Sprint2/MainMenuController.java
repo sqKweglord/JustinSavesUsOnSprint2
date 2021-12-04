@@ -1,4 +1,4 @@
-package com.example.justinsavesusonsprint2;
+package com.example.Sprint2;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;

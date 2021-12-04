@@ -1,7 +1,7 @@
 package MenuItems;
 
-import com.example.justinsavesusonsprint2.Main;
-import com.example.justinsavesusonsprint2.PizzaCustomizer;
+import com.example.Sprint2.Main;
+import com.example.Sprint2.PizzaCustomizer;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class Pizza extends MenuItem {
+
 
     public enum Crust {
         THIN,
@@ -123,10 +124,17 @@ public class Pizza extends MenuItem {
     @Override
     public String toString() {
         StringBuilder msg = new StringBuilder();
-        msg.append("Pizza ").append("ID: ").append(itemID).append("\n");
-        msg.append("Name: ").append(itemName).append("\n");
+        msg.append("Pizza: ").append(itemName).append("\n");
         msg.append("Size: ").append(size).append("\n");
-        msg.append("Toppings: ").append(toppings).append("\n");
+        msg.append("Toppings: \n");
+        for (Topping top : toppings) {
+            msg.append(top).append("\n");
+        }
         return msg.toString();
+    }
+
+    @Override
+    public double getPrice() {
+        return 10 + (double)toppings.size();
     }
 }

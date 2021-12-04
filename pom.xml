@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.example.justinsavesusonsprint2/com.example.justinsavesusonsprint2.Main
+                                com.example.justinsavesusonsprint2/com.example.Sprint2.Main
                             </mainClass>
                         </configuration>
                     </execution>

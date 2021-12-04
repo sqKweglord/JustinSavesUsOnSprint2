@@ -1,7 +1,7 @@
 package MenuItems;
 
-import com.example.justinsavesusonsprint2.DrinkCustomizer;
-import com.example.justinsavesusonsprint2.Main;
+import com.example.Sprint2.DrinkCustomizer;
+import com.example.Sprint2.Main;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -75,12 +75,14 @@ public class Drink extends MenuItem {
 
     @Override
     public String toString() {
-        return "Drink{" +
-                "type=" + type + "\n" +
-                ", size=" + size + "\n" +
-                ", itemID=" + itemID + "\n" +
-                ", itemName='" + itemName + '\'' + "\n" +
-                ", size=" + size +
-                '}';
+        String msg = "";
+        msg += "Drink: " + itemName + "\n";
+        msg += "Size: " + size;
+        return msg;
+    }
+
+    @Override
+    public double getPrice() {
+        return 5;
     }
 }
